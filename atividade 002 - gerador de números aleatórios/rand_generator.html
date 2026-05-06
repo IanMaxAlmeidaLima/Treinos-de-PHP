@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Gerador de Números Aleatórios</title>
+    <style>
+        label{
+            font-family: 'Prompt', sans-serif;
+            font-weight: bolder;
+            font-size: 16px;
+        }
+
+        .button-colors{
+            background-color: rgb(34, 113, 197);
+            color: white;
+            border-radius: 5px;
+            border: none;
+            height: 60px;
+        }
+
+        .button-colors:hover{
+            background-color: rgb(0, 80, 192);
+        }
+    </style>
+</head>
+<body class = "d-flex justify-content-center bg-primary">
+    <div class="d-flex justify-content-center flex-column bg-light p-5 w-45 m-5 rounded">
+        <h2 class = "text-center fw-bolder">Aperte o botão para gerar um número aleatório</h2>
+        <form action = "" method = "get" class="d-flex flex-column data-container p-5 w-100 rounded">
+            <label for="numberInput" class="form-label text-dark fs-6 bg-opacity-50 rounded">Gerando um número aletório entre 0 e 100</label>
+            <p id="randomNumber">O valor gerado foi: </p>
+            <input class="button-colors" type="submit" style = "max-width: 800px" value="Gerar outro">
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
