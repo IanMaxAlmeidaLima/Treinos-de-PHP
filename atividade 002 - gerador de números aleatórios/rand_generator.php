@@ -28,11 +28,12 @@
 <body class = "d-flex justify-content-center bg-primary">
     <div class="d-flex justify-content-center flex-column bg-light p-5 w-45 m-5 rounded">
         <h2 class = "text-center fw-bolder">Aperte o botão para gerar um número aleatório</h2>
-        <form action = "" method = "get" class="d-flex flex-column data-container p-5 w-100 rounded">
-            <label for="numberInput" class="form-label text-dark fs-6 bg-opacity-50 rounded">Gerando um número aletório entre 0 e 100</label>
-            <p id="randomNumber">O valor gerado foi: </p>
-            <input class="button-colors" type="submit" style = "max-width: 800px" value="Gerar outro">
-        </form>
+        <?php
+            $num = mt_rand(0, 100);
+            echo "Gerando um número aleatório entre 0 e 100...<br>";
+            echo "O valor gerado foi: $num";
+        ?>
+            <button class="button-colors mt-4" onclick="window.location.reload()">Gerar outro número</button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
