@@ -20,6 +20,7 @@
                 echo "<p>Nenhum número foi informado.</p>";
             }
         ?>
+        <button onclick="window.history.back(-1)">Voltar</button>
     </div>
 </body>
 </html>
